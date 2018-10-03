@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Mes contacts
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list *ngIf="contacts">
+    <ion-item *ngFor="let contact of contacts">
+      <ion-avatar *ngIf="contact.profileImage" item-start>
+        <img [src]="contact.profileImage">
+      </ion-avatar>
+      {{ contact.displayName }}
+      <p *ngIf="contact.mainPhoneNumber">Tel : {{ contact.mainPhoneNumber }}</p>
+      <p *ngIf="contact.mainEmail">Email : {{ contact.mainEmail }}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

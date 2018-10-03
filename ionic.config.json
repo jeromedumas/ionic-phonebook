@@ -1,0 +1,7 @@
+{
+  "name": "ionic-phonebook",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
